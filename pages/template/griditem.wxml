@@ -1,0 +1,5 @@
+<template name="grid_item">
+  <view class='grid_item' bindtap="goPlayVideo">
+      <text class='gird_content'>{{dataItem}}</text>
+  </view>
+</template>

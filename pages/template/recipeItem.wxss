@@ -1,0 +1,43 @@
+.recipe-contain{
+  width: 100%;
+  justify-content: center;
+  align-items: center
+}
+
+.recipe-show{
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx;
+}
+
+.recipe-contain .recipe-show image{
+  width: 100%;
+  height: 400rpx;
+}
+
+.recipe-list-show{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10rpx;
+}
+
+.recipe-list-show .collect-show{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.recipe-list-show .collect-show image{
+  width: 40rpx;
+  height: 35rpx;
+}
+
+.recipe-list-show .collect-show text{
+  padding-left: 8rpx;
+  font-size: 13px;
+  color: #A4A4A4;
+}
+
+
+

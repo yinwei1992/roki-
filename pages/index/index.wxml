@@ -1,0 +1,57 @@
+<import src="../template/recipeItem.wxml"/>
+<import src="../template/themeShow.wxml"/>
+<view class='slider'>
+    <swiper indicator-dots="{{true}}" autoplay="{{ true }}" interval="2500" duration="400" circular>
+        <swiper-item wx:for="{{ bannerList }}" wx:key="id" >
+            <image src="{{ item.imageUrl }}" width="375" height="150"  mode="aspectFill" lazy-load />
+        </swiper-item>
+    </swiper>
+</view>
+
+<!-- 首页导航分区 -->
+<view class='index-nav'>
+    <navigator class='nav-item' url='/pages/recipeList/recipeList?title=灶具菜谱&dc=RRQZ'>
+        <image src='/assets/images/rqz.png'></image>
+        <text>灶具菜谱</text>
+    </navigator>
+    <navigator class='nav-item' url='/pages/recipeList/recipeList?title=烤箱菜谱&dc=RDKX'>
+        <image src='/assets/images/dkx.png'></image>
+        <text>烤箱菜谱</text>
+    </navigator>
+    <navigator class='nav-item' url='/pages/recipeList/recipeList?title=蒸汽炉菜谱&dc=RZQL'>
+        <image src='/assets/images/zql.png'></image>
+        <text>蒸汽炉菜谱</text>
+    </navigator>
+    <navigator class='nav-item' url='/pages/recipeList/recipeList?title=微波炉菜谱&dc=RWBL'>
+        <image src='/assets/images/wbl.png'></image>
+        <text>微波炉菜谱</text>
+    </navigator>  
+</view>
+
+<!-- 首页入口分区 -->
+<view class='index-enter'>
+    <navigator class='enter-item1' url='/pages/chufan/chufan'>
+       <image src='/assets/images/chufangzhishi.png'  mode="aspectFill"></image>
+    </navigator>
+    <navigator class='enter-item2'>
+       <image src='/assets/images/dongtai.png'  mode="aspectFill"></image>
+    </navigator>
+</view>
+
+<!--主题菜谱-->
+<view class='title-show'>
+      <text class='theme-com'>主题推荐</text>
+       <text class='morelook'>查看更多</text>
+</view>
+<block wx:for="{{themeList}}" wx:for-item="themeData" wx:key="id">
+     <template is="theme-item" data="{{...themeData}}"/>
+</block>
+<!--菜谱推荐-->
+<view class='title-show'>
+      <text class='theme-com'>推荐10道菜</text>
+       <text class='morelook' bindtap='goMoreRecipe'>查看更多</text>
+</view>
+<block wx:for="{{recipeList}}" wx:for-item="dataItem" wx:key="id">
+     <template is="recipe-item" data="{{...dataItem}}"/>
+</block>
+

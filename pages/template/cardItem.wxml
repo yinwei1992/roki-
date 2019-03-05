@@ -1,0 +1,12 @@
+<template name="cardview">
+  <view class="item" bindtap='goRecipeDetail' data-id="{{id}}" data-name="{{name}}">
+    <image class="item-img" src="{{imgSmall}}" mode="widthFix"></image>
+    <view class="name">
+      <view class='name-txt'>
+         <text class="name-title">{{name}}</text>
+         <text class='collect'>{{viewCount}}人收藏</text>
+      </view> 
+        <image class="logo" src="{{providerImage}}"></image>
+    </view>
+  </view>  
+</template>

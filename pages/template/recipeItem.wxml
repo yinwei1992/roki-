@@ -1,0 +1,14 @@
+<template name="recipe-item">
+    <view class='recipe-contain' bindtap="goRecipeDetail" data-id="{{id}}" data-name="{{name}}">
+    <view class='recipe-show'>
+      <image src="{{imgMedium}}" mode="aspectFill" lazy-load></image>
+      <view class='recipe-list-show'>
+        <text class='recipe-title'>{{name}}</text>
+        <view class='collect-show'>
+          <image src='/assets/images/zan.png' mode="aspectFill"></image>
+          <text>{{collectCount}}人收藏</text>
+        </view>
+      </view>
+    </view>
+  </view>  
+</template>

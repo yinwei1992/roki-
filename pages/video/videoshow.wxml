@@ -1,0 +1,24 @@
+<!--pages/video/videoshow.wxml-->
+<import src="../template/griditem.wxml"/>
+<view class='video_container'>
+  <view class='imgshow'>
+      <image src='/assets/images/chufangzhishi.png' mode="aspectFill"  class='videoimg'></image>
+      <image src='/assets/images/play.png' mode='aspectFill' class='videoplay' bindtap="goPlayVideo"></image>
+  </view>
+  <view class='viewnum'>
+    <image src='/assets/images/eye.png' mode='aspectFill' class='eyeimg'></image>
+    <text class='num'>6</text>
+  </view>
+  <view class='txtcs'>
+      <text class='titlecs'>羊肉西湖锅贴</text>
+      <text class='desc'>"羊肉历来被当作冬季进补的重要食品之一。寒冬常吃羊肉可益气补虚，促进血液循环，增强御寒能力。羊肉还可增加消化酶，保护胃壁，有助于消化。中医认为，羊肉具有补精血，益虚劳，温中健脾，补肾壮阳，养肝等功效。对虚劳嬴瘦、腰膝酸软、脾胃虚弱、食少反胃，头眩明目、肾阳不足、气血亏虚、阳痿、寒疝、产后虚冷、缺乳等病症有良效。尤其适合老年人、体虚的男人和产后妇女。"</text>
+  </view>
+  <view class='listcs'>
+      <text class='listshow'>选集</text>
+      <view class='listview'>
+       <block wx:for="{{totalList}}" wx:for-item="dataItem" wx:key="id">
+           <template is="grid_item" data="{{dataItem}}"/>
+       </block>
+      </view>
+  </view>
+</view>

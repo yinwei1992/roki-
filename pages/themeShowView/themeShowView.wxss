@@ -1,0 +1,24 @@
+/* pages/themeShowView/themeShowView.wxss */
+@import "../template/recipeItem.wxss";
+.themedetail{
+  flex-direction: column;
+}
+
+.desc-txt{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.title{
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 20rpx;
+}
+
+.desc{
+  font-size: 12px;
+  color: #A4A4A4;
+  padding: 20rpx;
+}

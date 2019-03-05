@@ -1,0 +1,14 @@
+<template name="theme-item">
+  <view class='theme-contain' bindtap='gothemeShow' data-cookbookidlist="{{relateCookbookId}}"
+    data-desc="{{description}}" data-name="{{name}}"
+  >
+    <view class='theme-show'>
+      <image src="{{imageUrl}}" mode="aspectFill" lazy-load />
+      <view class='theme-title-show'>
+        <text class='theme-title'>{{name}}</text>
+        <text class='theme-time'>2018-11-24</text>
+      </view>
+      <text class='theme-subtitle'>{{subName}}</text>
+    </view>
+  </view>   
+</template>

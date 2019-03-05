@@ -1,0 +1,23 @@
+<!--pages/desi/desi.wxml-->
+<view class='da-container' wx:for="{{videoList}}" wx:for-item="videodata" wx:key="id" bindtap='goVideoDetail'>
+    <view class='img-show'>
+      <image src='{{videodata.seriesImage}}' mode="aspectFill"></image>
+    </view>
+    <view class='tip-container'>
+       <image class='tip' src='{{videodata.albumLogo}}'></image>
+    </view>
+   
+    <view class='title-container'>
+      <text>{{videodata.seriesName}}</text>
+    </view>  
+    <view class='detail-container'>
+      <text class='txt1'>更新至{{videodata.episode}}集</text>
+      <view class='visist-view'>
+        <image class='eye' src='/assets/images/eye.png'></image>
+        <text class='view-num'>{{videodata.play}}</text>
+      </view>
+      <text class='txt2'>喵小白</text>
+    </view>
+    <view class='divider'></view>
+</view>
+

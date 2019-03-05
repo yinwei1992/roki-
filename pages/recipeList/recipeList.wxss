@@ -1,0 +1,15 @@
+@import "../template/recipeItem.wxss";
+.main{
+    display: flex;
+    /* 1.2. 设置垂直排列 */
+    flex-direction: column;
+    /* 1.3.设置主轴居中 */
+    justify-content: center;
+    /* 1.4.设置交叉轴居中 */
+    align-items: center;
+}
+
+.imgpost{
+  width: 100%;
+  height: 400rpx;
+}

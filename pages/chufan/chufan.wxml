@@ -1,0 +1,2 @@
+<!--pages/chufan/chufan.wxml-->
+<web-view src="{{url}}"></web-view>

@@ -1,0 +1,13 @@
+.grid_item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gainsboro;
+  margin: 10rpx;
+  width: 9.85%;
+}
+
+.gird_content{
+  padding: 20rpx 30rpx;
+  font-size: 15px;
+}

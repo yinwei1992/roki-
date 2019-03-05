@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/recipeList/recipeList",
+    "pages/detailView/detailView",
+    "pages/chufan/chufan",
+    "pages/themeShowView/themeShowView",
+    "pages/moreRecipe/moreRecipe",
+    "pages/desi/desi",
+    "pages/video/videoshow",
+    "pages/videoplay/videoplay",
+    "pages/profile/profile"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f60",
+    "navigationBarTitleText": "ROKI",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#333",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "美食",
+        "iconPath": "assets/tabs/home.png",
+        "selectedIconPath": "assets/tabs/home-active.png"
+      },
+      {
+        "pagePath": "pages/desi/desi",
+        "text": "达人",
+        "iconPath": "assets/tabs/meishi1.png",
+        "selectedIconPath": "assets/tabs/meishi1-active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我",
+        "iconPath": "assets/tabs/profile1.png",
+        "selectedIconPath": "assets/tabs/profile1-active.png"
+      }
+    ]
+  }
+}

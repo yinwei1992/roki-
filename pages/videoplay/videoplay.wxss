@@ -1,0 +1,24 @@
+/* pages/videoplay/videoplay.wxss */
+
+.section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.videocs{
+  width: 100%;
+}
+
+.btn-area{
+  display: flex;
+  flex-direction: column;
+}
+
+.input{
+  margin-top: 30rpx;
+  display: flex;
+  border: 2rpx solid greenyellow;
+  margin-bottom: 20rpx;
+}

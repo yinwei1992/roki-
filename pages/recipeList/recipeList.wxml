@@ -1,0 +1,7 @@
+<import src="../template/recipeItem.wxml"/>
+<view class='main'>
+  <image src='{{postdata.imgUrl}}' mode="aspectFill" class='imgpost'></image>
+  <block wx:for="{{recipedate}}" wx:for-item="dataItem" wx:key="id">
+     <template is="recipe-item" data="{{...dataItem}}"/>
+  </block>
+</view>

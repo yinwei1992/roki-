@@ -1,0 +1,12 @@
+<!--pages/themeShowView/themeShowView.wxml-->
+<import src="../template/recipeItem.wxml"/>
+<view class='themedetail'>
+    <view class='desc-txt'>
+        <text class='title'>{{title}}</text>
+        <text class='desc'>{{desc}}</text>
+    </view>
+
+    <block wx:for="{{cookbookData}}" wx:for-item="dataItem" wx:key="id">
+      <template is="recipe-item" data="{{...dataItem}}"></template>
+    </block>
+</view>

@@ -1,0 +1,16 @@
+<!--pages/moreRecipe/moreRecipe.wxml-->
+<import src='../template/cardItem.wxml'/>
+<view class='content'>
+    <view class="left">
+        <block wx:for="{{recipeData}}" wx:for-item="dataItem" wx:key="id">
+           <template is="cardview" data="{{...dataItem}}" wx:if="{{index%2==0}}"/>   
+        </block>
+      </view>
+      <view class="right">
+          <block wx:for="{{recipeData}}" wx:for-item="dataItem" wx:key="id">
+             <template is="cardview" data="{{...dataItem}}" wx:if="{{index%2==1}}"/>
+          </block>
+      </view>
+   
+</view>
+
